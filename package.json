@@ -1,0 +1,14 @@
+{
+  "name": "germany-vector-tiles-chloropleth",
+  "version": "1.0.0",
+  "description": "investigation of using vector tiles for chlorpleth data viz",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
