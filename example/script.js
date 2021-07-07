@@ -6,15 +6,19 @@ const {DeckGL, MVTLayer} = deck;
 let shouldUpdate = 1
 let viz
 
-const gemeindenURL = `${window.location.origin}/tiles/gemeinden-z7-ids/{z}/{x}/{y}.pbf`
+const baseURL = window.location.href.replace('/example/', '')
+
+console.log('base url', baseURL)
+
+const gemeindenURL = `${baseURL}/tiles/gemeinden-z7-ids/{z}/{x}/{y}.pbf`
 
 const gemeindenData = [ gemeindenURL]
 
-const kreiseURL = `${window.location.origin}/tiles/kreise-z8-Z6-filtered-ai/{z}/{x}/{y}.pbf`
+const kreiseURL = `${baseURL}/tiles/kreise-z8-Z6-filtered-ai/{z}/{x}/{y}.pbf`
 
 const kreiseData = [ kreiseURL]
 
-const laenderURL = `${window.location.origin}/tiles/laender-z6-ids/{z}/{x}/{y}.pbf`
+const laenderURL = `${baseURL}/tiles/laender-z6-ids/{z}/{x}/{y}.pbf`
 
 const laenderData = [ laenderURL]
 

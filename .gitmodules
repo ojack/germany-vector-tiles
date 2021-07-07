@@ -1,0 +1,3 @@
+[submodule "german-administrative-areas"]
+	path = german-administrative-areas
+	url = https://github.com/juliuste/german-administrative-areas
