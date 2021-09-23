@@ -4,11 +4,23 @@
   "description": "investigation of using vector tiles for chlorpleth data viz",
   "main": "index.js",
   "scripts": {
-    "serve": "http-server ."
+    "serve": "http-server .",
+    "watch": "watchify example-data-loading/script.js -o example-data-loading/bundle.js -v -t [ babelify --presets [ @babel/preset-env ] ] --debug",
+    "dev": "npm run watch & npm run serve"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "http-server": "^0.12.3"
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babelify": "^10.0.0",
+    "http-server": "^0.12.3",
+    "watchify": "^4.0.0"
+  },
+  "dependencies": {
+    "@loaders.gl/core": "^3.0.9",
+    "@loaders.gl/csv": "^3.0.9",
+    "d3": "^7.0.1",
+    "nanohtml": "^1.9.1"
   }
 }

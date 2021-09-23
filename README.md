@@ -55,7 +55,12 @@ laender (zoom 6 to 0)
 tippecanoe -z6 -y GEN --generate-ids --no-tile-compression --output-to-directory laender-z6-ids ./german-administrative-areas/laender.geo.json
 ```
 
+#### Different geographic boundaries at the same zoom level
+tippecanoe -z13 -y GEN --generate-ids --no-tile-compression --output-to-directory tiles/gemeinden-zAll-ids ./german-administrative-areas/gemeinden.geo.json
 
+tippecanoe -z13 -y GEN --generate-ids --no-tile-compression --output-to-directory tiles/laender-zAll-ids ./german-administrative-areas/laender.geo.json
+
+tippecanoe -z13 -y GEN --generate-ids --no-tile-compression --output-to-directory tiles/kreise-zAll-ids ./german-administrative-areas/kreise.geo.json
 
 ### Notes
 - compression in tippecanoe refers to whether or not the output is g-zipped. this results in smaller file sizes, but requires special headings on server requests
@@ -72,6 +77,37 @@ tippecanoe -z6 -y GEN --generate-ids --no-tile-compression --output-to-directory
 helpful https://deck.gl/docs/developer-guide/performance
 
 ### Loading and animating data
+
+#### Test Data format:
+--Timeseries data with a separate folder for each geographic level, and a separate file for each geographic region
+--my-sample-data
+    metadata.json
+    gemeinden
+        mobility-by-date
+            2020-01-12.csv
+            2020-02-13
+            .....
+        mobility-by-region
+            geoid0.csv
+            geoid1.csv
+            .....
+
+format for metadata.json:
+```
+ dataset: {
+     geoLevel: {
+         geoFile: 'my_gemeinden_vectors.geojson',
+         numFeatures: -----,
+         startDate:
+         endDate:
+     }
+ } 
+```
+   
+TO DO:
+1. example rendering and animating only gemeinden level with fake data
+    a. generate fake data at each date
+    b. load data as needed (preload? use webworkers?)
 Dynamically load and display data based on features being currently rendered
 
 separate file for each date + geographic level (not spit into vectors)
