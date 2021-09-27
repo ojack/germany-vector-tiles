@@ -1,0 +1,14 @@
+{
+"name": "tiles/kreise-zAll-ids",
+"description": "tiles/kreise-zAll-ids",
+"version": "2",
+"minzoom": "0",
+"maxzoom": "13",
+"center": "9.733887,54.533831,13",
+"bounds": "5.866250,47.270124,15.041816,55.058384",
+"type": "overlay",
+"format": "pbf",
+"generator": "tippecanoe v1.36.0",
+"generator_options": "tippecanoe -z13 -y GEN --generate-ids --no-tile-compression --output-to-directory tiles/kreise-zAll-ids ./german-administrative-areas/kreise.geo.json",
+"json": "{\"vector_layers\": [ { \"id\": \"kreisegeo\", \"description\": \"\", \"minzoom\": 0, \"maxzoom\": 13, \"fields\": {\"GEN\": \"String\"} } ],\"tilestats\": {\"layerCount\": 1,\"layers\": [{\"layer\": \"kreisegeo\",\"count\": 432,\"geometry\": \"Polygon\",\"attributeCount\": 1,\"attributes\": [{\"attribute\": \"GEN\",\"count\": 380,\"type\": \"string\",\"values\": [\"Ahrweiler\",\"Aichach-Friedberg\",\"Alb-Donau-Kreis\",\"Altenburger Land\",\"Altenkirchen (Westerwald)\",\"Altmarkkreis Salzwedel\",\"Altötting\",\"Alzey-Worms\",\"Amberg\",\"Amberg-Sulzbach\",\"Ammerland\",\"Anhalt-Bitterfeld\",\"Ansbach\",\"Aschaffenburg\",\"Augsburg\",\"Aurich\",\"Bad Dürkheim\",\"Bad Kissingen\",\"Bad Kreuznach\",\"Bad Tölz-Wolfratshausen\",\"Baden-Baden\",\"Bamberg\",\"Barnim\",\"Bautzen\",\"Bayreuth\",\"Berchtesgadener Land\",\"Bergstraße\",\"Berlin\",\"Bernkastel-Wittlich\",\"Biberach\",\"Bielefeld\",\"Birkenfeld\",\"Bochum\",\"Bodenseekreis\",\"Bonn\",\"Borken\",\"Bottrop\",\"Brandenburg an der Havel\",\"Braunschweig\",\"Breisgau-Hochschwarzwald\",\"Bremen\",\"Bremerhaven\",\"Burgenlandkreis\",\"Böblingen\",\"Börde\",\"Calw\",\"Celle\",\"Cham\",\"Chemnitz\",\"Cloppenburg\",\"Coburg\",\"Cochem-Zell\",\"Coesfeld\",\"Cottbus\",\"Cuxhaven\",\"Dachau\",\"Dahme-Spreewald\",\"Darmstadt\",\"Darmstadt-Dieburg\",\"Deggendorf\",\"Delmenhorst\",\"Dessau-Roßlau\",\"Diepholz\",\"Dillingen a.d. Donau\",\"Dingolfing-Landau\",\"Dithmarschen\",\"Donau-Ries\",\"Donnersbergkreis\",\"Dortmund\",\"Dresden\",\"Duisburg\",\"Düren\",\"Düsseldorf\",\"Ebersberg\",\"Eichsfeld\",\"Eichstätt\",\"Eifelkreis Bitburg-Prüm\",\"Eisenach\",\"Elbe-Elster\",\"Emden\",\"Emmendingen\",\"Emsland\",\"Ennepe-Ruhr-Kreis\",\"Enzkreis\",\"Erding\",\"Erfurt\",\"Erlangen\",\"Erlangen-Höchstadt\",\"Erzgebirgskreis\",\"Essen\",\"Esslingen\",\"Euskirchen\",\"Flensburg\",\"Forchheim\",\"Frankenthal (Pfalz)\",\"Frankfurt (Oder)\",\"Frankfurt am Main\",\"Freiburg im Breisgau\",\"Freising\",\"Freudenstadt\"]}]}]}}"
+}

@@ -1,0 +1,14 @@
+{
+"name": "laender-z6-ids",
+"description": "laender-z6-ids",
+"version": "2",
+"minzoom": "0",
+"maxzoom": "6",
+"center": "8.437500,50.702640,6",
+"bounds": "5.866250,47.270124,15.041816,55.099169",
+"type": "overlay",
+"format": "pbf",
+"generator": "tippecanoe v1.36.0",
+"generator_options": "tippecanoe -z6 -y GEN --generate-ids --no-tile-compression --output-to-directory laender-z6-ids ./german-administrative-areas/laender.geo.json",
+"json": "{\"vector_layers\": [ { \"id\": \"laendergeo\", \"description\": \"\", \"minzoom\": 0, \"maxzoom\": 6, \"fields\": {\"GEN\": \"String\"} } ],\"tilestats\": {\"layerCount\": 1,\"layers\": [{\"layer\": \"laendergeo\",\"count\": 34,\"geometry\": \"Polygon\",\"attributeCount\": 1,\"attributes\": [{\"attribute\": \"GEN\",\"count\": 18,\"type\": \"string\",\"values\": [\"Baden-Württemberg\",\"Baden-Württemberg (Bodensee)\",\"Bayern\",\"Bayern (Bodensee)\",\"Berlin\",\"Brandenburg\",\"Bremen\",\"Hamburg\",\"Hessen\",\"Mecklenburg-Vorpommern\",\"Niedersachsen\",\"Nordrhein-Westfalen\",\"Rheinland-Pfalz\",\"Saarland\",\"Sachsen\",\"Sachsen-Anhalt\",\"Schleswig-Holstein\",\"Thüringen\"]}]}]}}"
+}

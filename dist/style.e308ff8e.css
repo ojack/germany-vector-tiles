@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .deck-tooltip {
+    font-size: 0.8em;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
