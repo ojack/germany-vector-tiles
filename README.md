@@ -1,4 +1,4 @@
-## [WIP] EXPLORATION OF USING VECTOR TILES for RENDERING LARGE-SCALE DATASETS in the BROWSER
+## [WIP] Exploration of using vector tiles for rendering large-scale datasets in the browser
 
 This repository is an exploration of strategies for:
 - simplifying geographic polygons based on visible area
