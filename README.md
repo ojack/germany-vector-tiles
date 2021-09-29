@@ -103,15 +103,23 @@ pre-calculated color scale as in : https://github.com/visgl/deck.gl/blob/8.4-rel
 --Timeseries data with a separate folder for each geographic level, and a separate file for each geographic region
 --my-sample-data
     metadata.json
-    gemeinden
-        mobility-by-date
-            2020-01-12.csv
-            2020-02-13
-            .....
-        mobility-by-region
-            geoid0.csv
-            geoid1.csv
-            .....
+    datasets
+        my-sample-data-1
+            gemeinden
+                values-by-date
+                    2020-01-12.csv
+                    2020-02-13
+                    .....
+                values-by-region
+                    geoid0.csv
+                    geoid1.csv
+                    .....
+            laender
+                values-by-date
+                values-by-region
+    tilesets
+        laender
+        gemeinden
 
 format for metadata.json:
 ```

@@ -34,7 +34,6 @@ const tilesets = [{
   id: 'gemeinden',// 
   url: 'gemeinden',
   numEntries: 11431,
-  idLookup: 'myLookup.csv' // not yet implemented, a csv file with an array, where each value in the array is a geographicId. All datasets that use this geodata should have values in the same order as this array.
 }, {
   label: 'kreise',
   id: 'kreise',

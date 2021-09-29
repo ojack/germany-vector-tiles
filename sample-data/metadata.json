@@ -1,4 +1,20 @@
 {
+    "tilesets": [
+        {
+            "label": "gemeinden", 
+            "id": "gemeinden",
+            "numEntries": 11431
+          }, {
+            "label": "kreise",
+            "id": "kreise",
+            "numEntries": 432
+          },
+           {
+            "label": "laender",
+            "id": "laender",
+            "numEntries": 34
+          }
+    ],
     "datasets": [
         {
             "id": "mobility",
@@ -18,21 +34,5 @@
                 "gemeinden"
             ]
         }
-    ],
-    "tilesets": [
-        {
-            "label": "gemeinden", // 
-            "id": "gemeinden",// 
-            "numEntries": 11431,
-          }, {
-            "label": "kreise",
-            "id": "kreise",
-            "numEntries": 432
-          },
-           {
-            "label": "laender",
-            "id": "laender",
-            "numEntries": 34
-          }
     ]
 }
