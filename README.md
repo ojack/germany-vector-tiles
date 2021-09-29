@@ -78,7 +78,28 @@ helpful https://deck.gl/docs/developer-guide/performance
 
 ### Loading and animating data
 
-#### Test Data format:
+```
+   
+### TO DO
+1. ~~example rendering and animating only gemeinden level with fake data~~
+    * ~~generate fake data at each date~~
+    * ~~load data as needed~~ (preload? use webworkers?)
+2. ~~Dynamically load and display data based on features being currently rendered~~
+3. Add example `metadata.json` 
+4. document folder structure (update version below)
+5. Generate example `id-lookup.csv` for each vector tileset. (File that associates a specific geoid with a specific array index. All datasets that reference this tileset should use the given id lookup. Possibly also create an `id-lookup-extended.csv` that contains more properties from vector features. )
+separate file for each date + geographic level (not spit into vectors)
+
+### QUESTIONS
+* is it reasonable to use the same order as id array from each tileset in order to generate ordered arrays of values for each dataset? 
+* should each dataset and tileset have its own `metadata.json`, should there be one for 'datasets' and one for 'tilesets', or just one for all? This might affect data pipeline. Ideally, datasets shown and labelling, etc. could be updated just by updating the data files. Is there a way that is most efficient in terms of diffing and versioning? Datasets are likely to change often (each day as is updated), where as tilesets will very rarely if ever change. 
+
+### Optimizations
+pre-calculated color scale as in : https://github.com/visgl/deck.gl/blob/8.4-release/examples/website/geojson/app.js
+
+
+
+#### (OLD, NEED TO REWRITE) Test Data format:
 --Timeseries data with a separate folder for each geographic level, and a separate file for each geographic region
 --my-sample-data
     metadata.json
@@ -102,17 +123,3 @@ format for metadata.json:
          endDate:
      }
  } 
-```
-   
-TO DO:
-1. example rendering and animating only gemeinden level with fake data
-    a. generate fake data at each date
-    b. load data as needed (preload? use webworkers?)
-Dynamically load and display data based on features being currently rendered
-
-separate file for each date + geographic level (not spit into vectors)
-
-separate tiled layer for each data source?
-
-### Optimizations
-pre-calculated color scale as in : https://github.com/visgl/deck.gl/blob/8.4-release/examples/website/geojson/app.js

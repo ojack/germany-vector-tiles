@@ -1,0 +1,38 @@
+{
+    "datasets": [
+        {
+            "id": "mobility",
+            "label": {
+                "en": "Mobility raw values",
+                "de": ""
+            },
+            "description": {
+                "en": "",
+                "de": ""
+            },
+            "startDate": "2021-05-23",
+            "endDate": "2021-08-30",
+            "tilesets": [
+                "laender",
+                "kreise",
+                "gemeinden"
+            ]
+        }
+    ],
+    "tilesets": [
+        {
+            "label": "gemeinden", // 
+            "id": "gemeinden",// 
+            "numEntries": 11431,
+          }, {
+            "label": "kreise",
+            "id": "kreise",
+            "numEntries": 432
+          },
+           {
+            "label": "laender",
+            "id": "laender",
+            "numEntries": 34
+          }
+    ]
+}

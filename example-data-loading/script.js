@@ -53,8 +53,8 @@ const datasets = [{
   label: 'Mobility by Date',
   id: 'mobility',
   url: '',
-  startDate: '',
-  endDate: '',
+  startDate: '2021-05-23',
+  endDate: '2021-08-30',
   tilesets: ['laendergeo', 'kreisegeo', 'gemeindengeo']
 }]
 
@@ -120,7 +120,7 @@ function render () {
   // console.log(tilesets, 'tilesets')
   const layers = tilesets.map((tileset) => new MVTLayer({
     // id: tileset.id,
-    id: tileset.label,
+    id: tileset.id,
     data: tileset.tiles,
     pickable: tileset.visible,
     getFillColor: (obj) => {
