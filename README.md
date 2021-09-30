@@ -62,6 +62,14 @@ tippecanoe -z13 -y GEN --generate-ids --no-tile-compression --output-to-director
 
 tippecanoe -z13 -y GEN --generate-ids --no-tile-compression --output-to-directory tiles/kreise-zAll-ids ./german-administrative-areas/kreise.geo.json
 
+
+#### Using sorted geojson (ids have already been pre-generated)
+tippecanoe -z13 -y AGS -y GEN -l laender --force --no-tile-compression --output-to-directory sample-data/tilesets/laender ./data-processing/data/laender-sorted.json
+
+tippecanoe -z13 -y AGS -y GEN -l kreise --force --no-tile-compression --output-to-directory sample-data/tilesets/kreise ./data-processing/data/kreise-sorted.json
+
+tippecanoe -z13 -y AGS -y GEN -l gemeinden --force --no-tile-compression --output-to-directory sample-data/tilesets/gemeinden ./data-processing/data/gemeinden-sorted.json
+
 ### Notes
 - compression in tippecanoe refers to whether or not the output is g-zipped. this results in smaller file sizes, but requires special headings on server requests
 
@@ -99,8 +107,7 @@ pre-calculated color scale as in : https://github.com/visgl/deck.gl/blob/8.4-rel
 
 
 
-#### (OLD, NEED TO REWRITE) Test Data format:
---Timeseries data with a separate folder for each geographic level, and a separate file for each geographic region
+#### Folder structure g
 --my-sample-data
     metadata.json
     datasets
@@ -117,17 +124,20 @@ pre-calculated color scale as in : https://github.com/visgl/deck.gl/blob/8.4-rel
             laender
                 values-by-date
                 values-by-region
+        my-sample-data-2
+              gemeinden
+                values-by-date
+                    2020-01-12.csv
+                    2020-02-13
+                    .....
+                values-by-region
+                    geoid0.csv
+                    geoid1.csv
+                    .....
+            laender
+                values-by-date
+                values-by-region
     tilesets
         laender
         gemeinden
 
-format for metadata.json:
-```
- dataset: {
-     geoLevel: {
-         geoFile: 'my_gemeinden_vectors.geojson',
-         numFeatures: -----,
-         startDate:
-         endDate:
-     }
- } 

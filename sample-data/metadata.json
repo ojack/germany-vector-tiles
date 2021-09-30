@@ -26,6 +26,8 @@
                 "en": "",
                 "de": ""
             },
+            "minValue": 0,
+            "maxValue": 1,
             "startDate": "2021-05-23",
             "endDate": "2021-08-30",
             "tilesets": [

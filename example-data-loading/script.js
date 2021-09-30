@@ -58,7 +58,7 @@ const datasets = [{
 }]
 
 tilesets.forEach((tileset, i) => {
-  const URL = `${baseURL}${tilesetPath}${tileset.url}/{z}/{x}/{y}.pbf`
+  const URL = `${baseURL}${tilesetPath}${tileset.url}/{z}/{x}/{y}.pbf?${Date.now()}` // @TODO: remove date now, only for resetting browser cache in dev version
   tileset.tiles = [ URL ]
   tileset.visibile = false
   tileset.mobility = new Array(tileset.numEntries).fill(0).map((_, i) => Math.random())
@@ -161,9 +161,9 @@ viz = new DeckGL({
   controller: true,
   getTooltip: ({ object }) => { 
     if(object) {
-      console.log(object)
+      console.log(object.id, object.properties, object.properties.AGS)
 
-      return `${object.properties.GEN} mobility ${geoRegion.mobility[object.id]}`
+      return `${object.properties.GEN} ${object.properties.AGS} mobility ${geoRegion.mobility[object.id]}`
     }
     return null
   }

@@ -1,6 +1,6 @@
 {
-"name": "tiles/laender-zAll-ids",
-"description": "tiles/laender-zAll-ids",
+"name": "sample-data/tilesets/laender",
+"description": "sample-data/tilesets/laender",
 "version": "2",
 "minzoom": "0",
 "maxzoom": "13",
@@ -9,6 +9,6 @@
 "type": "overlay",
 "format": "pbf",
 "generator": "tippecanoe v1.36.0",
-"generator_options": "tippecanoe -z13 -y GEN --generate-ids --no-tile-compression --output-to-directory tiles/laender-zAll-ids ./german-administrative-areas/laender.geo.json",
-"json": "{\"vector_layers\": [ { \"id\": \"laendergeo\", \"description\": \"\", \"minzoom\": 0, \"maxzoom\": 13, \"fields\": {\"GEN\": \"String\"} } ],\"tilestats\": {\"layerCount\": 1,\"layers\": [{\"layer\": \"laendergeo\",\"count\": 34,\"geometry\": \"Polygon\",\"attributeCount\": 1,\"attributes\": [{\"attribute\": \"GEN\",\"count\": 18,\"type\": \"string\",\"values\": [\"Baden-Württemberg\",\"Baden-Württemberg (Bodensee)\",\"Bayern\",\"Bayern (Bodensee)\",\"Berlin\",\"Brandenburg\",\"Bremen\",\"Hamburg\",\"Hessen\",\"Mecklenburg-Vorpommern\",\"Niedersachsen\",\"Nordrhein-Westfalen\",\"Rheinland-Pfalz\",\"Saarland\",\"Sachsen\",\"Sachsen-Anhalt\",\"Schleswig-Holstein\",\"Thüringen\"]}]}]}}"
+"generator_options": "tippecanoe -z13 -y AGS -y GEN -l laender --force --no-tile-compression --output-to-directory sample-data/tilesets/laender ./data-processing/data/laender-sorted.json",
+"json": "{\"vector_layers\": [ { \"id\": \"laender\", \"description\": \"\", \"minzoom\": 0, \"maxzoom\": 13, \"fields\": {\"AGS\": \"String\", \"GEN\": \"String\"} } ],\"tilestats\": {\"layerCount\": 1,\"layers\": [{\"layer\": \"laender\",\"count\": 34,\"geometry\": \"Polygon\",\"attributeCount\": 2,\"attributes\": [{\"attribute\": \"AGS\",\"count\": 16,\"type\": \"string\",\"values\": [\"01\",\"02\",\"03\",\"04\",\"05\",\"06\",\"07\",\"08\",\"09\",\"10\",\"11\",\"12\",\"13\",\"14\",\"15\",\"16\"]},{\"attribute\": \"GEN\",\"count\": 18,\"type\": \"string\",\"values\": [\"Baden-Württemberg\",\"Baden-Württemberg (Bodensee)\",\"Bayern\",\"Bayern (Bodensee)\",\"Berlin\",\"Brandenburg\",\"Bremen\",\"Hamburg\",\"Hessen\",\"Mecklenburg-Vorpommern\",\"Niedersachsen\",\"Nordrhein-Westfalen\",\"Rheinland-Pfalz\",\"Saarland\",\"Sachsen\",\"Sachsen-Anhalt\",\"Schleswig-Holstein\",\"Thüringen\"]}]}]}}"
 }
