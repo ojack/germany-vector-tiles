@@ -159,6 +159,7 @@ viz = new DeckGL({
     bearing: 0
   },
   controller: true,
+  useDevicePixels: false,
   getTooltip: ({ object }) => { 
     if(object) {
       console.log(object.id, object.properties, object.properties.AGS)

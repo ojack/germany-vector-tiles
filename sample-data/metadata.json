@@ -3,16 +3,19 @@
         {
             "label": "gemeinden", 
             "id": "gemeinden",
-            "numEntries": 11431
+            "numEntries": 11431,
+            "id-lookup": "gemeinden-lookup.csv"
           }, {
             "label": "kreise",
             "id": "kreise",
-            "numEntries": 432
+            "numEntries": 432,
+            "id-lookup": "kreise-lookup.csv"
           },
            {
             "label": "laender",
             "id": "laender",
-            "numEntries": 34
+            "numEntries": 34,
+            "id-lookup": "laender-lookup.csv"
           }
     ],
     "datasets": [
